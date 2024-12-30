@@ -4,14 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Momentum App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <form class="hidden" id="login-form">
         <input required maxlength="15" type="text" id="input" placeholder="Enter title">
         <button id="button">Submit</button>
     </form>
+    <h2 id="clock" class="hidden">00:00</h2>
     <h1 id="greeting" class="hidden">Title</h1>
-    <script src="app.js"></script>
+    <form id="todo-form">
+        <input required maxlength="15" type="text" id="todo-input" placeholder="Enter todo">
+        <button id="todo-button">Submit</button>
+    </form>
+    <ul id="todo-list">
+        <li>Todo</li>
+    </ul>
+    <div id="quote">
+        <span></span>
+        <br>
+        <span></span>
+    </div>
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/quotes.js"></script>
 </body>
 </html>
